@@ -1,0 +1,810 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>139/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Aug 21 19:18:56 EDT 2023</td>
+</tr>
+<tr><td>Total time:</td><td>710 seconds (710969 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successful registration", "Register User to dsportal app"</td>
+<td><div><pre>java.lang.AssertionError: expected [https://dsportalapp.herokuapp.com/home] but found [https://dsportalapp.herokuapp.com/register]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at pageObject.RegisterPage.assertUrl(RegisterPage.java:144)
+	at defenitions.Register.navigates_to_home_page(Register.java:54)
+	at ✽.Navigates to home page(file:///C:/Manju/SDET/ds-algoproject/src/test/resources/features/register.feature:11)
+</pre></div><a href='#' onClick='toggleBox("stack-trace970888092", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace970888092'><pre>java.lang.AssertionError: expected [https://dsportalapp.herokuapp.com/home] but found [https://dsportalapp.herokuapp.com/register]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at pageObject.RegisterPage.assertUrl(RegisterPage.java:144)
+	at defenitions.Register.navigates_to_home_page(Register.java:54)
+	at ✽.Navigates to home page(file:///C:/Manju/SDET/ds-algoproject/src/test/resources/features/register.feature:11)
+</pre></div></td>
+<td>3</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor in each links with invalid code", "Graph feature validation"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user is able to navigate to graph datastructure", "Graph feature validation"</td>
+<td></td>
+<td>3</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register link validation from Sign in page", "Login feature validation"</td>
+<td></td>
+<td>2</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor in each links for invalid code", "Feature for DataStructures Validation"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Tree page", "Tree Page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor verification in each page for invalid code", "Feature for Stack Validation"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User enters Queue Page", "Feature for Queue Validation"</td>
+<td></td>
+<td>7</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Linked List using dropdown option", "Linked List Page"</td>
+<td></td>
+<td>3</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Signout validation", "Register User to dsportal app"</td>
+<td></td>
+<td>3</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor link with valid code  in each page", "Array verification"</td>
+<td></td>
+<td>7</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Linked list page", "Linked List Page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor in each links for valid code", "Feature for Stack Validation"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User enters arrays Page", "Array verification"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Linked List using Get Strated option", "Linked List Page"</td>
+<td></td>
+<td>3</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Tree page", "Tree Page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor link with valid code  in each page", "Array verification"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor in each links with valid code", "Graph feature validation"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "practice link verification", "Array verification"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get started button clicked without login", "Home Page feature validation"</td>
+<td></td>
+<td>2</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is seeing topics in Linked list page", "Linked List Page"</td>
+<td></td>
+<td>3</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is seeing topics in Tree page", "Tree Page"</td>
+<td></td>
+<td>3</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Linked list page", "Linked List Page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Linked list page", "Linked List Page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Tree page", "Tree Page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Practice questions validation", "Feature for Stack Validation"</td>
+<td></td>
+<td>3</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Tree page", "Tree Page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Practice questions validation", "Feature for Stack Validation"</td>
+<td></td>
+<td>3</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get started button clicked without login", "Home Page feature validation"</td>
+<td></td>
+<td>2</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "practice link verification", "Array verification"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor in each links for invalid code", "Feature for Stack Validation"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor verification in each page for invalid code", "Feature for Stack Validation"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Tree page", "Tree Page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Tree page", "Tree Page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor in each links with invalid code", "Array verification"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor verification in each page for invalid code", "Feature for Queue Validation"</td>
+<td></td>
+<td>8</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Linked list page", "Linked List Page"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Tree page", "Tree Page"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Tree page", "Tree Page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try editor in graph with invalid code", "Graph feature validation"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor in each links with valid code", "Array verification"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Tree page", "Tree Page"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Tree page", "Tree Page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "practice link verification", "Array verification"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor in each links for valid code", "Feature for Stack Validation"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try editor in graph with valid code", "Graph feature validation"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User enters Data Structure Page", "Feature for DataStructures Validation"</td>
+<td></td>
+<td>3</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "practice link verification", "Array verification"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try editor in graph with valid code", "Graph feature validation"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Linked list page", "Linked List Page"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Drop down selection without login", "Home Page feature validation"</td>
+<td></td>
+<td>2</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Practice questions validation", "Feature for Stack Validation"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Drop down selection without login", "Home Page feature validation"</td>
+<td></td>
+<td>3</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Tree page", "Tree Page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor verification in each page for invalid code", "Feature for DataStructures Validation"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Practice questions validation", "Feature for DataStructures Validation"</td>
+<td></td>
+<td>3</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor verification in each page for valid code", "Feature for Stack Validation"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Linked list page", "Linked List Page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor in each links for valid code", "Feature for Stack Validation"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Home Page URL", "Home Page feature validation"</td>
+<td></td>
+<td>2</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User enters invalid username", "Login feature validation"</td>
+<td></td>
+<td>3</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Content in Home Page", "Home Page feature validation"</td>
+<td></td>
+<td>2</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "practice link verification", "Array verification"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor verification in each page for invalid code", "Feature for Queue Validation"</td>
+<td></td>
+<td>9</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "practice question validation", "Graph feature validation"</td>
+<td></td>
+<td>3</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get started button clicked without login", "Home Page feature validation"</td>
+<td></td>
+<td>2</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor verification in each page for valid code", "Feature for DataStructures Validation"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor in each links with valid code", "Array verification"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Linked list page", "Linked List Page"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor in each links with valid code", "Graph feature validation"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get started button clicked without login", "Home Page feature validation"</td>
+<td></td>
+<td>2</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Tree page", "Tree Page"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "practice question validation", "Graph feature validation"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor in each links for invalid code", "Feature for Stack Validation"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Content in Home Page dropdown", "Home Page feature validation"</td>
+<td></td>
+<td>2</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor link with valid code  in each page", "Array verification"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Linked list page", "Linked List Page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get started button clicked without login", "Home Page feature validation"</td>
+<td></td>
+<td>2</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Tree page", "Tree Page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get started button clicked without login", "Home Page feature validation"</td>
+<td></td>
+<td>2</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is not able to register into the dsportalapp", "Register User to dsportal app"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Sign in Page Navigation", "Home Page feature validation"</td>
+<td></td>
+<td>2</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Drop down selection without login", "Home Page feature validation"</td>
+<td></td>
+<td>2</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Linked list page", "Linked List Page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User enters invalid username from excel", "Login feature validation"</td>
+<td></td>
+<td>2</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Tree page", "Tree Page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor link with valid code  in each page", "Array verification"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor in each links for invalid code", "Feature for Stack Validation"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User enters Stack Page", "Feature for Stack Validation"</td>
+<td></td>
+<td>3</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Tree page", "Tree Page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User enters Queue Page", "Feature for Queue Validation"</td>
+<td></td>
+<td>8</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User enters Queue Page", "Feature for Queue Validation"</td>
+<td></td>
+<td>8</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Drop down selection without login", "Home Page feature validation"</td>
+<td></td>
+<td>2</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor in each links with invalid code", "Array verification"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Tree page", "Tree Page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Tree page", "Tree Page"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor in each links with invalid code", "Array verification"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor in each links with invalid code", "Array verification"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Linked list page", "Linked List Page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor link with valid code  in each page", "Array verification"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Tree page", "Tree Page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Tree page", "Tree Page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Tree page", "Tree Page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "practice link verification", "Array verification"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Linked list page", "Linked List Page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is seeing topics in Tree page", "Tree Page"</td>
+<td></td>
+<td>11</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Drop down selection without login", "Home Page feature validation"</td>
+<td></td>
+<td>2</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User enters Queue Page", "Feature for Queue Validation"</td>
+<td></td>
+<td>8</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register Page Navigation", "Home Page feature validation"</td>
+<td></td>
+<td>2</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Tree page", "Tree Page"</td>
+<td></td>
+<td>3</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor in each links with invalid code", "Graph feature validation"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Linked list page", "Linked List Page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Tree page", "Tree Page"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor link with valid code  in each page", "Array verification"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor link with valid code  in each page", "Array verification"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Drop down selection without login", "Home Page feature validation"</td>
+<td></td>
+<td>2</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Tree using dropdown option", "Tree Page"</td>
+<td></td>
+<td>2</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor verification in each page for invalid code", "Feature for Stack Validation"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor in each links for valid code", "Feature for DataStructures Validation"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor verification in each page for invalid code", "Feature for Queue Validation"</td>
+<td></td>
+<td>8</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor verification in each page for valid code", "Feature for Stack Validation"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is seeing topics in Linked list page", "Linked List Page"</td>
+<td></td>
+<td>7</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Linked list page", "Linked List Page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "practice link verification", "Array verification"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Linked list page", "Linked List Page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor link with valid code  in each page", "Array verification"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor verification in each page for valid code", "Feature for Stack Validation"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try editor in graph with invalid code", "Graph feature validation"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Tree page", "Tree Page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Tree page", "Tree Page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get started button clicked without login", "Home Page feature validation"</td>
+<td></td>
+<td>2</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Tree page", "Tree Page"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor in each links with valid code", "Array verification"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "practice link verification", "Array verification"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to try code in Tree page", "Tree Page"</td>
+<td></td>
+<td>4</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor in each links with valid code", "Array verification"</td>
+<td></td>
+<td>6</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "practice link verification", "Array verification"</td>
+<td></td>
+<td>5</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Tree using Get Strated option", "Tree Page"</td>
+<td></td>
+<td>2</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TryEditor verification in each page for invalid code", "Feature for Queue Validation"</td>
+<td></td>
+<td>8</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigate to login page from Register page", "Register User to dsportal app"</td>
+<td></td>
+<td>2</td>
+<td>runner.TestRunner@50f6ac94</td></tr>
+</table><p>
+</body>
+</html>
